@@ -38,5 +38,26 @@ dependencies = [
     "x-transformers>=1.31.14",
 ]
 
+[project.optional-dependencies]
+cu128 = [
+  "torch>=2.7.0",
+  "torchvision>=0.22.0",
+  "torchaudio>=2.7.0"
+]
+
 [tool.uv.sources]
 gradio-utils = { git = "https://github.com/JarodMica/gradio_utils.git" }
+torch = [
+  { index = "pytorch-cu128", extra = "cu128" },
+]
+torchvision = [
+  { index = "pytorch-cu128", extra = "cu128" },
+]
+torchaudio = [
+  { index = "pytorch-cu128", extra = "cu128" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
