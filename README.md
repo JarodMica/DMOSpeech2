@@ -1,3 +1,6 @@
+# Jarod's Note:
+> Most likely will not be active on the repo for updates, etc if things break.
+
 # DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis
 
 [![python](https://img.shields.io/badge/Python-3.10-brightgreen)](https://github.com/yl4579/DMOSpeech2)
@@ -19,44 +22,42 @@ TODO:
 - [ ] Fine-tune vocoder or train HiFTNet for higher acoustic quality
 
 ## Pre-requisites
+- uv astral installed on your computer - https://docs.astral.sh/uv/#highlights
+- An NVIDIA Graphics card highly recommended
 
-### Create a separate environment if needed
+### Installation
 
-```bash
-conda create -n dmo2 python=3.10
-conda activate dmo2
-```
+1. Clone the repo:
+  ```
+  git clone https://github.com/JarodMica/DMOSpeech2.git
+  cd DMOSpeech2
+  ```
+2. Set-up env. with uv
+  ```
+  uv sync
+  ```
 
-### Install required packages
-
-1. Clone this repository:
-```bash
-git clone https://github.com/yl4579/DMOSpeech2.git
-cd DMOSpeech2
-```
-2. Install python requirements: 
-```bash
-pip install -r requirements.txt
-```
-
-Alternatively, you can also create a [F5-TTS enviornment](https://github.com/SWivid/F5-TTS) and directy run the inference with it. 
+This should pretty much be it, models will need to be downloaded before inference.
 
 ## Inference
 
-1. Download checkpoints from [Huggingface](https://huggingface.co/yl4579/DMOSpeech2) to `ckpts` folder.
+1. Download checkpoints from [Huggingface](https://huggingface.co/yl4579/DMOSpeech2) to `ckpts` folder. Create a new `ckpts` folder in the root if there isn't one.
   - [model_1500.pt](https://huggingface.co/yl4579/DMOSpeech2/blob/main/model_1500.pt) is the GRPO-finetuned duration predictor checkpoint.
   - [model_85000.pt](https://huggingface.co/yl4579/DMOSpeech2/blob/main/model_85000.pt) is the DMOSpeech checkpoint (including teacher for teacher-guided sampling).
 
-You can run the following command lines:
+You can also run the following command lines:
 
-```bash
-mkdir ckpts
-cd ckpts
-wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt
-wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt
-```
+  ```bash
+  mkdir ckpts
+  cd ckpts
+  wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt
+  wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt
+  ```
 
-2. Run [demo.ipynb](https://github.com/yl4579/DMOSpeech2/blob/main/src/demo.ipynb) to see various inference schemes.
+2. Test out inference with:
+  ```
+  uv run generate_audio.py
+  ```
 
 TODO: 
 
