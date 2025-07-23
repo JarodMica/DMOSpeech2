@@ -18,15 +18,15 @@ from tqdm import tqdm
 
 import torch.nn.functional as F
 
-from f5_tts.model import CFM
-from f5_tts.model.dataset import collate_fn, DynamicBatchSampler
-from f5_tts.model.utils import default, exists
+from dmospeech2.f5tts.model import CFM
+from dmospeech2.f5tts.model.dataset import collate_fn, DynamicBatchSampler
+from dmospeech2.f5tts.model.utils import default, exists
 
 from duration_predictor import calculate_remaining_lengths
 
 # trainer
 
-from f5_tts.model.utils import (
+from dmospeech2.f5tts.model.utils import (
     default,
     exists,
     list_str_to_idx,

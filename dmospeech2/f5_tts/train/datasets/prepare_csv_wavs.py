@@ -20,7 +20,7 @@ import torchaudio
 from datasets.arrow_writer import ArrowWriter
 from tqdm import tqdm
 
-from f5_tts.model.utils import convert_char_to_pinyin
+from dmospeech2.f5tts.model.utils import convert_char_to_pinyin
 
 
 PRETRAINED_VOCAB_PATH = files("f5_tts").joinpath("../../data/Emilia_ZH_EN_pinyin/vocab.txt")

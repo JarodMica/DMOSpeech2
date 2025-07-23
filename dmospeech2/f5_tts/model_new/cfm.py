@@ -18,8 +18,8 @@ from torch import nn
 from torch.nn.utils.rnn import pad_sequence
 from torchdiffeq import odeint
 
-from f5_tts.model_new.modules import MelSpec
-from f5_tts.model_new.utils import (
+from dmospeech2.f5tts.model_new.modules import MelSpec
+from dmospeech2.f5tts.model_new.utils import (
     default,
     exists,
     get_epss_timesteps,

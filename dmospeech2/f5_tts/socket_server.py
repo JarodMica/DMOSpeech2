@@ -16,7 +16,7 @@ from huggingface_hub import hf_hub_download
 from hydra.utils import get_class
 from omegaconf import OmegaConf
 
-from f5_tts.infer.utils_infer import (
+from dmospeech2.f5tts.infer.utils_infer import (
     chunk_text,
     infer_batch_process,
     load_model,

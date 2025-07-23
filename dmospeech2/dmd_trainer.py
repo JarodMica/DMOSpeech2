@@ -15,9 +15,9 @@ from accelerate import Accelerator
 from accelerate.utils import DistributedDataParallelKwargs
 
 from unimodel import UniModel
-from f5_tts.model import CFM
-from f5_tts.model.utils import exists, default
-from f5_tts.model.dataset import DynamicBatchSampler, collate_fn
+from dmospeech2.f5tts.model import CFM
+from dmospeech2.f5tts.model.utils import exists, default
+from dmospeech2.f5tts.model.dataset import DynamicBatchSampler, collate_fn
 
 
 # trainer

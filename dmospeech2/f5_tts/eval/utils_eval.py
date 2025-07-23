@@ -9,9 +9,9 @@ import torch.nn.functional as F
 import torchaudio
 from tqdm import tqdm
 
-from f5_tts.eval.ecapa_tdnn import ECAPA_TDNN_SMALL
-from f5_tts.model.modules import MelSpec
-from f5_tts.model.utils import convert_char_to_pinyin
+from dmospeech2.f5tts.eval.ecapa_tdnn import ECAPA_TDNN_SMALL
+from dmospeech2.f5tts.model.modules import MelSpec
+from dmospeech2.f5tts.model.utils import convert_char_to_pinyin
 
 
 # seedtts testset metainfo: utt, prompt_text, prompt_wav, gt_text, gt_wav

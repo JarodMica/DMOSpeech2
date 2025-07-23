@@ -13,7 +13,7 @@ from importlib.resources import files
 
 import numpy as np
 
-from f5_tts.eval.utils_eval import get_librispeech_test, run_asr_wer, run_sim
+from dmospeech2.f5tts.eval.utils_eval import get_librispeech_test, run_asr_wer, run_sim
 
 
 rel_path = str(files("f5_tts").joinpath("../../"))

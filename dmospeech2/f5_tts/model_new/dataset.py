@@ -10,8 +10,8 @@ from torch import nn
 from torch.utils.data import Dataset, Sampler
 from tqdm import tqdm
 
-from f5_tts.model.modules import MelSpec
-from f5_tts.model.utils import default
+from dmospeech2.f5tts.model.modules import MelSpec
+from dmospeech2.f5tts.model.utils import default
 
 
 class HFDataset(Dataset):

@@ -14,7 +14,7 @@ from hydra.utils import get_class
 from omegaconf import OmegaConf
 from unidecode import unidecode
 
-from f5_tts.infer.utils_infer import (
+from dmospeech2.f5tts.infer.utils_infer import (
     cfg_strength,
     cross_fade_duration,
     device,

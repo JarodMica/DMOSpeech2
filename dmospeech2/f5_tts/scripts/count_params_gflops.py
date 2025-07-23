@@ -7,7 +7,7 @@ sys.path.append(os.getcwd())
 import thop
 import torch
 
-from f5_tts.model import CFM, DiT
+from dmospeech2.f5tts.model import CFM, DiT
 
 
 """ ~155M """

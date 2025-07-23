@@ -20,7 +20,7 @@ from librosa.filters import mel as librosa_mel_fn
 from torch import nn
 from x_transformers.x_transformers import apply_rotary_pos_emb
 
-from f5_tts.model_new.utils import is_package_available
+from dmospeech2.f5tts.model_new.utils import is_package_available
 
 
 # raw wav to mel spec

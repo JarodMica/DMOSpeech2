@@ -31,7 +31,7 @@ import torch
 import torch.nn.functional as F
 import torchaudio
 import triton_python_backend_utils as pb_utils
-from f5_tts_trtllm import F5TTS
+from dmospeech2.f5tts_trtllm import F5TTS
 from pypinyin import Style, lazy_pinyin
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.dlpack import from_dlpack, to_dlpack

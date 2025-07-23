@@ -40,7 +40,7 @@ import torch.distributed as dist
 import torch.nn.functional as F
 import torchaudio
 from datasets import load_dataset
-from f5_tts_trtllm import F5TTS
+from dmospeech2.f5tts_trtllm import F5TTS
 from huggingface_hub import hf_hub_download
 from pypinyin import Style, lazy_pinyin
 from tensorrt_llm._utils import trt_dtype_to_torch
@@ -382,8 +382,8 @@ def main():
         import sys
 
         sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../../../src/")
-        from f5_tts.infer.utils_infer import load_model
-        from f5_tts.model import DiT
+        from dmospeech2.f5tts.infer.utils_infer import load_model
+        from dmospeech2.f5tts.model import DiT
 
         F5TTS_model_cfg = dict(
             dim=1024,

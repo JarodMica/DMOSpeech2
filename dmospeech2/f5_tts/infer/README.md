@@ -44,7 +44,7 @@ f5-tts_infer-gradio --root_path "/myapp"
 Could also be used as a component for larger application:
 ```python
 import gradio as gr
-from f5_tts.infer.infer_gradio import app
+from dmospeech2.f5tts.infer.infer_gradio import app
 
 with gr.Blocks() as main_app:
     gr.Markdown("# This is an example of using F5-TTS within a bigger Gradio app")
@@ -133,7 +133,7 @@ You should mark the voice with `[main]` `[town]` `[country]` whenever you want t
 
 ```python
 from importlib.resources import files
-from f5_tts.api import F5TTS
+from dmospeech2.f5tts.api import F5TTS
 
 f5tts = F5TTS()
 wav, sr, spec = f5tts.infer(

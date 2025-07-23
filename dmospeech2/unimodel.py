@@ -9,10 +9,10 @@ import torch
 import copy
 import os
 
-from f5_tts.model import DiT, UNetT
+from dmospeech2.f5tts.model import DiT, UNetT
 from pathlib import Path
 from guidance_model import Guidance
-from f5_tts.model.utils import (
+from dmospeech2.f5tts.model.utils import (
     default,
     exists,
     list_str_to_idx,
@@ -268,10 +268,10 @@ class UniModel(nn.Module):
 
 if __name__ == "__main__":
     
-    from f5_tts.model.utils import get_tokenizer
+    from dmospeech2.f5tts.model.utils import get_tokenizer
     from torch.utils.data import DataLoader, Dataset, SequentialSampler
-    from f5_tts.model.dataset import load_dataset    
-    from f5_tts.model.dataset import DynamicBatchSampler, collate_fn
+    from dmospeech2.f5tts.model.dataset import load_dataset    
+    from dmospeech2.f5tts.model.dataset import DynamicBatchSampler, collate_fn
 
     bsz = 16
     
