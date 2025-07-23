@@ -35,7 +35,7 @@ def gpu_decorator(func):
         return func
 
 
-from dmospeech2.f5tts.infer.utils_infer import (
+from dmospeech2.f5_tts.infer.utils_infer import (
     infer_process,
     load_model,
     load_vocoder,
@@ -44,7 +44,7 @@ from dmospeech2.f5tts.infer.utils_infer import (
     save_spectrogram,
     tempfile_kwargs,
 )
-from dmospeech2.f5tts.model import DiT, UNetT
+from dmospeech2.f5_tts.model import DiT, UNetT
 
 
 DEFAULT_TTS_MODEL = "F5-TTS_v1"

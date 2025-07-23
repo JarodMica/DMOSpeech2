@@ -19,8 +19,8 @@ from accelerate import Accelerator
 from accelerate.utils import DistributedDataParallelKwargs
 import wandb
 
-from dmospeech2.f5tts.model.dataset import collate_fn, DynamicBatchSampler
-from dmospeech2.f5tts.model.utils import list_str_to_idx
+from dmospeech2.f5_tts.model.dataset import collate_fn, DynamicBatchSampler
+from dmospeech2.f5_tts.model.utils import list_str_to_idx
 
 # torch.autograd.set_detect_anomaly(True)
 # os.environ['HYDRA_FULL_ERROR'] = 'True'

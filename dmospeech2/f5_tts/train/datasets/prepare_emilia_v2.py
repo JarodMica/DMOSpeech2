@@ -10,7 +10,7 @@ from pathlib import Path
 from datasets.arrow_writer import ArrowWriter
 from tqdm import tqdm
 
-from dmospeech2.f5tts.model.utils import repetition_found
+from dmospeech2.f5_tts.model.utils import repetition_found
 
 
 # Define filters for exclusion

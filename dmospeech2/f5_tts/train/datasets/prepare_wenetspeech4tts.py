@@ -15,7 +15,7 @@ import torchaudio
 from datasets import Dataset
 from tqdm import tqdm
 
-from dmospeech2.f5tts.model.utils import convert_char_to_pinyin
+from dmospeech2.f5_tts.model.utils import convert_char_to_pinyin
 
 
 def deal_with_sub_path_files(dataset_path, sub_path):

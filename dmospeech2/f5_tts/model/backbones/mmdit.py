@@ -15,7 +15,7 @@ import torch.nn.functional as F
 
 from x_transformers.x_transformers import RotaryEmbedding
 
-from dmospeech2.f5tts.model.modules import (
+from dmospeech2.f5_tts.model.modules import (
     TimestepEmbedding,
     ConvPositionEmbedding,
     MMDiTBlock,
@@ -25,7 +25,7 @@ from dmospeech2.f5tts.model.modules import (
     get_pos_embed_indices,
 )
 
-from dmospeech2.f5tts.model.utils import (
+from dmospeech2.f5_tts.model.utils import (
     default,
     exists,
     lens_to_mask,
@@ -267,7 +267,7 @@ class TextEncoder(nn.Module):
         return hidden_states
 
 if __name__ == "__main__":
-    from dmospeech2.f5tts.model.utils import get_tokenizer
+    from dmospeech2.f5_tts.model.utils import get_tokenizer
 
     bsz = 16
     

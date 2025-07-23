@@ -28,8 +28,8 @@ from pydub import AudioSegment, silence
 from transformers import pipeline
 from vocos import Vocos
 
-from dmospeech2.f5tts.model import CFM
-from dmospeech2.f5tts.model.utils import convert_char_to_pinyin, get_tokenizer
+from dmospeech2.f5_tts.model import CFM
+from dmospeech2.f5_tts.model.utils import convert_char_to_pinyin, get_tokenizer
 
 
 _ref_audio_cache = {}

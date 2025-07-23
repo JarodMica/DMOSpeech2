@@ -5,9 +5,9 @@ from importlib.resources import files
 
 from cached_path import cached_path
 
-from dmospeech2.f5tts.model import CFM, DiT, Trainer, UNetT
-from dmospeech2.f5tts.model.dataset import load_dataset
-from dmospeech2.f5tts.model.utils import get_tokenizer
+from dmospeech2.f5_tts.model import CFM, DiT, Trainer, UNetT
+from dmospeech2.f5_tts.model.dataset import load_dataset
+from dmospeech2.f5_tts.model.utils import get_tokenizer
 
 
 # -------------------------- Dataset Settings --------------------------- #

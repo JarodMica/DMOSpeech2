@@ -6,15 +6,15 @@ from pathlib import Path
 from torchaudio.models import Conformer
 
 
-from dmospeech2.f5tts.model.utils import default
-from dmospeech2.f5tts.model.utils import exists
-from dmospeech2.f5tts.model.utils import list_str_to_idx
-from dmospeech2.f5tts.model.utils import list_str_to_tensor
-from dmospeech2.f5tts.model.utils import lens_to_mask
-from dmospeech2.f5tts.model.utils import mask_from_frac_lengths
+from dmospeech2.f5_tts.model.utils import default
+from dmospeech2.f5_tts.model.utils import exists
+from dmospeech2.f5_tts.model.utils import list_str_to_idx
+from dmospeech2.f5_tts.model.utils import list_str_to_tensor
+from dmospeech2.f5_tts.model.utils import lens_to_mask
+from dmospeech2.f5_tts.model.utils import mask_from_frac_lengths
 
 
-from dmospeech2.f5tts.model.utils import (
+from dmospeech2.f5_tts.model.utils import (
     default,
     exists,
     list_str_to_idx,
@@ -145,7 +145,7 @@ class ConformerCTC(nn.Module):
 
 
 if __name__ == "__main__":
-    from dmospeech2.f5tts.model.utils import get_tokenizer
+    from dmospeech2.f5_tts.model.utils import get_tokenizer
 
 
     bsz = 16

@@ -9,7 +9,7 @@ import torchaudio.transforms as trans
 from pathlib import Path
 from torchaudio.models import Conformer
 
-from dmospeech2.f5tts.model.utils import (
+from dmospeech2.f5_tts.model.utils import (
     default,
     exists,
     list_str_to_idx,
@@ -108,8 +108,8 @@ class ConformerDiscirminator(nn.Module):
         return out
 
 if __name__ == "__main__":
-    from dmospeech2.f5tts.model.utils import get_tokenizer
-    from dmospeech2.f5tts.model import DiT
+    from dmospeech2.f5_tts.model.utils import get_tokenizer
+    from dmospeech2.f5_tts.model import DiT
 
     bsz = 2
     

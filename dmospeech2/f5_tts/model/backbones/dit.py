@@ -15,7 +15,7 @@ import torch.nn.functional as F
 
 from x_transformers.x_transformers import RotaryEmbedding
 
-from dmospeech2.f5tts.model.modules import (
+from dmospeech2.f5_tts.model.modules import (
     TimestepEmbedding,
     ConvNeXtV2Block,
     ConvPositionEmbedding,
