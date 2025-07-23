@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchaudio.transforms as trans
-from ctcmodel import ConformerCTC
+from dmospeech2.ctcmodel import ConformerCTC
 # from ctcmodel_nopool import ConformerCTC as ConformerCTCNoPool
 from pathlib import Path
 

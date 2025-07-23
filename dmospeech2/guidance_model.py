@@ -27,9 +27,9 @@ from dmospeech2.f5_tts.model.utils import (
     mask_from_frac_lengths,
 )
 
-from discriminator_conformer import ConformerDiscirminator
-from ctcmodel import ConformerCTC
-from ecapa_tdnn import ECAPA_TDNN
+from dmospeech2.discriminator_conformer import ConformerDiscirminator
+from dmospeech2.ctcmodel import ConformerCTC
+from dmospeech2.ecapa_tdnn import ECAPA_TDNN
 
 class NoOpContext:
     def __enter__(self):

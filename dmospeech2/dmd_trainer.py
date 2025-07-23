@@ -14,7 +14,7 @@ from torch.optim.lr_scheduler import LinearLR, SequentialLR
 from accelerate import Accelerator
 from accelerate.utils import DistributedDataParallelKwargs
 
-from unimodel import UniModel
+from dmospeech2.unimodel import UniModel
 from dmospeech2.f5_tts.model import CFM
 from dmospeech2.f5_tts.model.utils import exists, default
 from dmospeech2.f5_tts.model.dataset import DynamicBatchSampler, collate_fn

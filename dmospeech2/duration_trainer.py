@@ -22,7 +22,7 @@ from dmospeech2.f5_tts.model import CFM
 from dmospeech2.f5_tts.model.dataset import collate_fn, DynamicBatchSampler
 from dmospeech2.f5_tts.model.utils import default, exists
 
-from duration_predictor import calculate_remaining_lengths
+from dmospeech2.duration_predictor import calculate_remaining_lengths
 
 # trainer
 

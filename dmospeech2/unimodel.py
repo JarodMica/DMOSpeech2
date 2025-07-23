@@ -11,7 +11,7 @@ import os
 
 from dmospeech2.f5_tts.model import DiT, UNetT
 from pathlib import Path
-from guidance_model import Guidance
+from dmospeech2.guidance_model import Guidance
 from dmospeech2.f5_tts.model.utils import (
     default,
     exists,
