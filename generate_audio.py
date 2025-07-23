@@ -11,10 +11,10 @@ import torchaudio
 from pathlib import Path
 
 # Add src directory to path
-sys.path.append(str(Path(__file__).parent / "src"))
+sys.path.append(str(Path(__file__).parent / "dmospeech2"))
 
 from huggingface_hub import login
-from infer import DMOInference
+from dmospeech2.infer import DMOInference
 import torch
 
 def main():

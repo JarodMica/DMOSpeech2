@@ -8,21 +8,21 @@ from safetensors.torch import load_file
 import IPython.display as ipd
 
 # Import F5-TTS modules
-from f5_tts.model import CFM, UNetT, DiT
-from f5_tts.model.modules import MelSpec
-from f5_tts.model.utils import (
+from dmospeech2.f5_tts.model import CFM, UNetT, DiT
+from dmospeech2.f5_tts.model.modules import MelSpec
+from dmospeech2.f5_tts.model.utils import (
     default, exists, list_str_to_idx, list_str_to_tensor,
     lens_to_mask, mask_from_frac_lengths, get_tokenizer
 )
-from f5_tts.infer.utils_infer import (
+from dmospeech2.f5_tts.infer.utils_infer import (
     load_vocoder, preprocess_ref_audio_text, chunk_text,
     convert_char_to_pinyin, transcribe, target_rms,
     target_sample_rate, hop_length, speed
 )
 
 # Import custom modules
-from unimodel import UniModel
-from duration_predictor import SpeechLengthPredictor
+from dmospeech2.unimodel import UniModel
+from dmospeech2.duration_predictor import SpeechLengthPredictor
 
 
 class DMOInference:
