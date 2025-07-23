@@ -69,4 +69,4 @@ requires = ["hatchling>=1.13.4", "hatch-vcs>=0.4.0"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = ["dmospeech2"]
