@@ -20,7 +20,7 @@ import torch
 def main():
     text = "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects."
     ref_text = "Some call me nature, others call me mother nature."
-    ref_audio = "src/f5_tts/infer/examples/basic/basic_ref_en.wav"
+    ref_audio = "dmospeech2/f5_tts/infer/examples/basic/basic_ref_en.wav"
     # ref_audio = "2.wav"
     # ref_text = "Kokoro is an open-weight TTS model with 82 million parameters."
     parser = argparse.ArgumentParser(description="Generate audio using DMOSpeech2")
