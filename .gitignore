@@ -6,6 +6,6 @@ CLAUDE.md
 gradio_interface.py
 generated_audio.wav
 .vscode/
-*.wav
+
 
 __pycache__/
