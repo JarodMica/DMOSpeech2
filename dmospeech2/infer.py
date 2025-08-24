@@ -35,6 +35,7 @@ class DMOInference:
         device="cuda",
         model_type="F5TTS_Base",  # "F5TTS_Base" or "E2TTS_Base"
         tokenizer="pinyin",
+        tokenizer_path=None,
         dataset_name="Emilia_ZH_EN",
     ):
         """
@@ -53,6 +54,7 @@ class DMOInference:
         self.device = device
         self.model_type = model_type
         self.tokenizer = tokenizer
+        self.tokenizer_path = tokenizer_path
         self.dataset_name = dataset_name
         
         # Model parameters
